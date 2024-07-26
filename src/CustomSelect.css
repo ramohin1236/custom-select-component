@@ -1,0 +1,70 @@
+.kzui-custom{
+    position: relative;
+    width: 500px;
+    text-align: center;
+    margin-left: 35%;
+}
+
+.kzui-custom__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.kzui-custom--disabled .kzui-custom__control {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+
+  .kzui-custom__value {
+   padding-left: 4px;
+   font-weight: 600;
+   font-size: 20px;
+  }
+
+  .kzui-custom__clear {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .kzui-custom__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #928fe3;
+    background-color: #fff;
+    z-index: 10;
+  }
+
+
+  .kzui-custom__search {
+    width: calc(100% - 20px);
+    height: 30px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 500px;
+    border: none;
+    border-bottom: 4px solid #ccc;
+  }
+  
+  .kzui-custom__option {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .kzui-custom__option:hover {
+    background-color: #c5c3f1;
+  }
+  
+  .kzui-custom__option--selected {
+    background-color: #937cd8;
+    
+  }
