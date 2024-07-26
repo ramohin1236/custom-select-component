@@ -1,10 +1,14 @@
-
+import CustomSelect from "./CustomSelect"
+import './App.css';
 function App() {
 
    
   return (
     <div>
-        <p>Robiul Awal Mohin</p>
+        <h1>Custom Select Component</h1>
+         <div className="kzui-custom-select">
+            <CustomSelect/>
+         </div>
     </div>
   )
 }
