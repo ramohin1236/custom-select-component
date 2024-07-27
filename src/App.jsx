@@ -1,4 +1,4 @@
-import CustomSelect from "./CustomSelect"
+import CustomSelect from "./Components/CustomSelect"
 import './App.css';
 import { useState } from "react";
 
@@ -47,12 +47,14 @@ function App() {
             value={selectedValue}
             placeholder="Select your item"
             isGrouped={false}
-            isMulti ={false}
+            isMulti ={true}
             onChangeHandler={handleChange}
             onMenuOpen={()=>console.log("Menu open")}
             onSearchHandler={handleSearch}
             />
          </div>
+
+         
     </div>
   )
 }
