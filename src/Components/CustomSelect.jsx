@@ -24,7 +24,7 @@ const CustomSelect = ({
     const [searchText,setSearchText]=useState("")
     const [filteredOptions, setFilteredOptions]=useState(options)
 
-    const text =' Select your value here'
+   
 // search with lowercase or uppercase do not matter
     useEffect(()=>{
         if(searchText && isSearchable){
