@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
+
 import { useEffect, useState } from "react";
 import '../Styles/CustomSelect.css';
+import PropTypes from 'prop-types';
 import { TiDelete } from "react-icons/ti";
 import { MdDelete } from "react-icons/md";
 const CustomSelect = ({
@@ -159,5 +159,22 @@ const handleOptionClick = (option) => {
   </div>
   )
 }
+
+
+CustomSelect.propTypes = {
+    isClearable: PropTypes.bool,
+    isSearchable: PropTypes.bool,
+    isDisabled: PropTypes.bool,
+    options: PropTypes.array.isRequired,
+    value: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+    placeholder: PropTypes.string,
+    isGrouped: PropTypes.bool,
+    isMulti: PropTypes.bool,
+    onChangeHandler: PropTypes.func,
+    onMenuOpen: PropTypes.func,
+    onSearchHandler: PropTypes.func,
+  };
+
+ 
 
 export default CustomSelect
